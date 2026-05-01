@@ -4,6 +4,7 @@
 int main() {
   // Entrada dos dados
     int torre, bispo = 1, rainha = 1;
+    int movimentoCavalo = 1;
 
     printf("Torre:\n");
   // loop for
@@ -31,6 +32,19 @@ int main() {
         printf("Esquerda\n");
         rainha++;
     } while (rainha <= 8);
+    // loop aninhado
+    printf("\n");
+    printf("Cavalo:\n");
+    while (movimentoCavalo < 2)
+    {
+      for (int i = 0; i < 2; i++)
+      {
+        printf("Cima\n");
+      }
+      printf("Esquerda\n");
+        movimentoCavalo++;
+    }
+
     
 
     
